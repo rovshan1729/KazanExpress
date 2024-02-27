@@ -8,7 +8,7 @@ class ShopSerializer(serializers.ModelSerializer):
         fields = (
             "id",
             "title",
-            "image_url",
+            "image",
             "created_at",
             "updated_at",
         )
@@ -39,6 +39,5 @@ class CategorySerializer(serializers.ModelSerializer):
             "id",
             "title",
             "description",
-            "created_at",
-            "updated_at",
+            "parent",
         )
